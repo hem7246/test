@@ -1,0 +1,9 @@
+Sudo: required
+
+Services:
+    -docker
+script:
+    - docker build -t mannydesigns/node .
+    - docker image  mannydesigns/node .
+
+
