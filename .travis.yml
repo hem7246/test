@@ -9,6 +9,7 @@ before_deploy:
     - docker login -u hem7246 -p hemant3011
 deploy:
     provider: script
+    skip_cleanup: true
     script: docker push mannydesigns/node
     on:
         branch: master
