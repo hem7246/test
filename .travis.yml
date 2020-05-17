@@ -3,13 +3,13 @@ Sudo: required
 Services:
     -docker
 script:
-    - docker build -t mannydesigns/node .
-    - docker images mannydesigns/node 
+    - docker build -t hem7246/mannydesigns .
+    - docker images hem7246/mannydesigns 
 before_deploy:
     - docker login -u hem7246 -p hemant3011
 deploy:
     provider: script
     skip_cleanup: true
-    script: docker push hem7246/mannydesigns/node
+    script: docker push hem7246/mannydesigns
     on:
         branch: master
