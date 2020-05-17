@@ -4,6 +4,4 @@ Services:
     -docker
 script:
     - docker build -t mannydesigns/node .
-    - docker image  mannydesigns/node .
-
-
+    - docker images mannydesigns/node .
